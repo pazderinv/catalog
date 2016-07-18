@@ -1,0 +1,453 @@
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+}
+
+body {
+	font: 14px "RobotoRegular", sans-serif;
+	height: 100%;
+	background-image:url(../images/bg_body.png);
+}
+.wrapper {
+	/*min-width: 1000px;*/
+	max-width: 1000px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/*background-color:#FFFFFF;*/
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 100px;
+	/*background: #FFE680;*/
+}
+	
+	.header-menu {
+		height:50px;
+		background: #FFE680;
+	}
+	
+	.header-logo-wrap {
+		width:30%;
+		float:left;
+	}
+	
+		.header-logo-content {
+			margin:20px 0 0 20px;
+		}
+			.header-logo-content a {
+				color:#EF4023;
+				font-family: "RobotoRegular", sans-serif;
+				display:block;
+				font-size:34px;
+				text-transform:uppercase;
+				text-decoration:none;
+				cursor:pointer;
+				border:none;
+				outline:none;
+				/*margin-bottom:5px;*/
+			}
+			.header-logo-content span {
+				color:#5c5c5f;
+			}
+			
+	.header-middle-wrap {
+		width:40%;
+		margin:0 30%;
+	}
+	.header-contacts-wrap {
+		width:30%;
+		float:right;
+	}
+	
+		.header-contacts-content {
+			margin:20px 0 0 20px;
+		}
+		
+		.header-contacts-content p {
+			/*line-height:20px;*/
+			margin:0;
+			font-size:22px;
+			color:#5c5c5f;
+		}
+
+/*.top-menu*/		
+
+.top-menu {
+	margin:20px 10px 40px;
+	padding:10px;
+	border-bottom:1px solid #dedede;
+	/*border-left:1px solid #dedede;*/
+	background-color:#F3F3F6;
+	border-radius:3px;
+	background-color:#fff;
+}
+
+	.top-menu ul {
+		margin:0; padding:0;
+	}
+	
+		.top-menu ul li {
+			float:left;
+		}
+		
+			.top-menu ul li a {
+				display:block;
+				color:#5c5c5f;
+				text-transform:uppercase;
+				text-decoration:none;
+				border:none;
+				outline:none;
+				padding:10px;
+				font-size:15px;
+				border-radius:3px;
+				margin-right:2px;
+				transition: all 0.3s ease 0s;
+			}
+			
+			.top-menu ul li a.tm-active, 
+			.top-menu ul li a:hover {
+				background-color:#FF7F50; color:#FFFFFF;
+			}
+
+/* Middle 
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 10px 10px 120px;
+}
+
+	.left-sidebar {
+		width:25%;
+		float: left;
+	}
+
+		.left-sidebar-widget h3 {
+			font-weight: normal;
+			font-size: 18px;
+			margin:0;
+			padding: 0;
+			margin-bottom: 15px;
+		}
+
+		.left-sidebar-widget ul {
+			margin:0;
+			padding: 0;
+		}
+
+			.left-sidebar-widget ul li{
+				padding-bottom: 5px;
+			}
+				
+				.left-sidebar-widget ul li .fa {
+					font-size: 13px;
+					color: #3CB371;
+				}
+
+				.left-sidebar-widget ul li a {
+					color: #5c5c5f;
+					padding-left: 5px;	
+				}
+
+				.left-sidebar-widget ul li a:hover {
+					text-decoration: none;
+				}
+
+	.right-content {
+		width: 75%; 
+		float: right;
+	}
+
+		.product-item {
+			width: 30%;
+			background-color: #fff;
+			border: 1px solid #DEDEDE;
+			border-radius: 4px;
+			float: left;
+			margin-left: 3%;
+		}
+			
+			.product-item-img{
+				width: 100%;
+				padding: 3%;
+			}
+
+				.product-item-img img {
+					display: block;
+					width: 94%;
+				}
+
+				.product-item-title {
+					padding: 3%;
+
+				}
+
+					.product-item-title a {
+						color: #5c5c5f;	
+						text-decoration: none;						
+					}
+
+					.product-item-title a:hover {
+						color:#7A7A7D;
+					}
+
+				.product-item-price {
+					padding: 3%;
+				}
+
+					.product-item-price span.pi-span-price {
+						float: left;
+						font-size: 16px;
+					}
+
+					.product-item-price span.pi-span-cart {
+						float: right;
+					}
+
+						.product-item-price span.pi-span-cart .fa {
+							color:#3CB371;
+							cursor: pointer;
+							font-size: 17px;
+						}
+
+						.product-item-price span.pi-span-cart .fa:hover {
+							color:#2AA15F;
+						}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -100px auto 0;
+	max-width: 1000px;
+	height: 100px;
+	background:#D1D2D4;
+	position: relative;
+	/*box-sizing:border-box;*/
+}
+	
+	.footer-copy {
+		
+	}
+	
+/*Служебные стили*/
+
+/*-- Очистка потока --*/
+.clearfix:before,
+	.clearfix:after {
+	content: " ";
+	display: table;
+}
+ 
+.clearfix:after {
+	clear: both;
+}
+ 
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+	*zoom: 1;
+}
+
+/*-- Обтекание --*/
+
+.f-right{
+	float:right;
+}
+
+.f-left{
+	float:left;
+}
+
+/*-- Выравнивание строк --*/
+
+.ta-left {
+	text-align:left;
+}
+
+.ta-right {
+	text-align:right;
+}
+
+.ta-center {
+	text-align:center;
+}
+
+/*-- Выравнивание по средине --*/
+/*.mid {
+	
+	max-width:1000px;
+	margin:auto;
+}
+*/
+/*-- Скрытие элемента --*/
+
+.hide {
+	display:none;
+}
+
+
+/* MEDIA */
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+	.header-middle-wrap {
+		display:none;
+	}
+	
+	.header-logo-wrap, .header-contacts-wrap {
+		width:50%;
+	}
+	
+	.services {
+		padding:0;
+	}
+	
+		.service-item {
+			clear:both;
+			float:none;
+			width:auto;
+			margin-right:0;
+			margin-bottom:50px;
+		}
+	
+	.footer {
+		width:auto;
+	}
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.header-middle-wrap {
+		display:none;
+	}
+	
+	.header-logo-wrap, .header-contacts-wrap {
+		width:50%;
+	}
+	
+	.services {
+			padding:0;
+		}
+		
+			.service-item {
+				clear:both;
+				float:none;
+				width:auto;
+				margin-right:0;
+				margin-bottom:50px;
+			}
+			
+				/*.link-wrap {
+					margin-top:20px;
+				}
+				
+					a.service-item-button {
+						float:none;
+						display:inline;
+					}*/
+	
+	.footer {
+		width:auto;
+	}
+
+	.top-menu ul li {
+		clear:both;
+		float:none;
+	}
+	
+}
+
+/* Extra Small Devices, Phones background: #D1D2D4;*/
+@media only screen and (max-width : 480px) {
+	
+	.header {
+		height:auto;
+	}
+	
+		.header-middle-wrap {
+			display:none;
+		}
+		
+		.header-logo-wrap, .header-contacts-wrap {
+			clear:both;
+			float:none;
+			width:auto;
+		}
+		
+		.header-logo-wrap {
+			padding-bottom:20px;
+			background-color:#F3F3F6;
+			/*border-bottom:1px solid #D1D2D4;*/
+			overflow:hidden;
+		}
+		
+		 .header-contacts-wrap {
+			padding-bottom:30px;
+		 }
+
+	.services {
+			padding:0;
+		}
+		
+			.service-item {
+				clear:both;
+				float:none;
+				width:auto;
+				margin-right:0;
+				margin-bottom:50px;
+			}
+				
+				/*.link-wrap {
+					margin-top:20px;
+				}
+				
+					a.service-item-button {
+						float:none;
+						display:inline;
+					}*/
+	
+	.footer {
+		width:auto;
+	}
+
+	.top-menu ul li {
+		clear:both;
+		float:none;
+	}
+	
+}
+
+/* Small Devices, Tablets 
+@media only screen and (min-width : 768px) {
+	
+	.service-item {
+		clear:both;
+		float:none;
+		width:auto;
+	}
+
+}*/
+
