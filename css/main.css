@@ -98,10 +98,10 @@ body {
 .top-menu {
 	margin:20px 10px 40px;
 	padding:10px;
-	border-bottom:1px solid #dedede;
+	border:1px solid #dedede;
 	/*border-left:1px solid #dedede;*/
 	background-color:#F3F3F6;
-	border-radius:3px;
+	border-radius:4px;
 	background-color:#fff;
 }
 
@@ -122,7 +122,7 @@ body {
 				outline:none;
 				padding:10px;
 				font-size:15px;
-				border-radius:3px;
+				border-radius:4px;
 				margin-right:2px;
 				transition: all 0.3s ease 0s;
 			}
@@ -234,6 +234,42 @@ body {
 						.product-item-price span.pi-span-cart .fa:hover {
 							color:#2AA15F;
 						}
+
+/*Детальный просмотр товара*/
+
+.detail-product {
+	width: 96%;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 2%;
+	border:1px solid #DEDEDE;
+}
+
+	.detail-product-gallery {
+		width: 40%;
+		float: left;
+	}
+
+		.gallery-main {
+			margin-bottom: 15px;
+		}
+			.gallery-main img {
+				width:100%;
+			}
+
+		.gallery-thumbs {}
+
+			.gallery-thumbs img {
+				width: 30%;
+				float:left;
+				margin: 0 3% 15px 0;
+			}
+
+	.detail-product-info {
+		width: 57%;
+		float: right;
+		margin-left: 3%;
+	}
 
 /* Footer
 -----------------------------------------------------------------------------*/
