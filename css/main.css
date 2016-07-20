@@ -96,7 +96,7 @@ body {
 /*.top-menu*/		
 
 .top-menu {
-	margin:20px 10px 40px;
+	margin:20px 10px 0px;
 	padding:10px;
 	border:1px solid #dedede;
 	/*border-left:1px solid #dedede;*/
@@ -135,10 +135,11 @@ body {
 /* Middle 
 -----------------------------------------------------------------------------*/
 .content {
-	padding: 10px 10px 120px;
+	padding: 0px 10px 120px;
 }
 
 	.left-sidebar {
+		padding: 50px 0 0 0;
 		width:23%;
 		float: left;
 		/*min-width: 190px;*/
@@ -186,6 +187,7 @@ body {
 		width: 75%; 
 		float: right;
 		margin-left: 2%;
+		padding: 50px 0 0 0;
 	}
 
 		.product-item {
@@ -310,30 +312,32 @@ body {
 				.calc-product span {
 					float: left;
 					border: 1px solid #dedede;
-					width: 30px; height: 30px;
+					width: 24px; height: 24px;
 					cursor: pointer;
 				}
 
 				.calc-plus {
 					text-align: center;
-					line-height: 30px;
+					line-height: 24px;
 					color: #7F7F7F;
 					border-radius: 0 3px 3px 0;
+					background-color: #fff;
 				}
 
 					.calc-plus:hover {background-color: #F2F2F2;}
 
 				.calc-minus {
 					text-align: center;
-					line-height: 30px;
+					line-height: 24px;
 					color: #7F7F7F;
 					border-radius: 3px 0 0 3px;
+					background-color: #fff;
 				}
 
 					.calc-minus:hover {background-color: #F2F2F2;}
 
 				.calc-input {
-					width: 46px !important;
+					width: 36px !important;
 					text-align: center;
 					border-right: none !important;
 					border-left: none !important;
@@ -342,7 +346,7 @@ body {
 					.calc-input input {
 						width: 100%;
 						margin: 0; padding: 0;
-						line-height: 30px;
+						line-height: 24px;
 						border: none;
 						outline: none;
 						text-align: center;
@@ -359,7 +363,7 @@ body {
 					font-size: 16px;
 					/*font-weight: bold;*/
 					color: #3CB371;
-					line-height: 32px;
+					line-height: 26px;
 				}
 
 			.action-product {}
