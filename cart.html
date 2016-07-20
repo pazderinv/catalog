@@ -86,20 +86,49 @@
 							border-radius: 4px;
 						}
 
-							.calc-table {}
+							.cart-table {}
 
-								.calc-table tr.head-tr {}
+								.cart-table tr.cart-product-tr:hover {
+									background-color: #f9f9f9;
+								}
 
-									.calc-table td.head-td {
+								.cart-table tr.head-tr {
+									padding: 0 0 5px 0;
+								}
+
+								.space-tr {
+									padding: 3px 0;
+									/*border-top: 1px solid #dedede;*/
+								}
+
+								/*.line-tr {
+									padding: 3px 0;
+									border-top: 1px solid #f2f2f2;
+								}*/
+
+									.cart-table td.head-td {
 										background-color: #f2f2f2;
+										padding: 10px 0;
 									}
 
-									.c1 {width: 15%;}
+									.c1 {
+										width: 15%;
+										margin: 0;
+										padding: 10px 0 0 0;
+										line-height: 0;
+										border-bottom: 1px solid #f2f2f2;
+									}
 
-										.c1 img {width: 100%;}
+										.c1 img {
+											width: 100%;
+											margin: 0;
+											padding: 0;
+											
+										}
 
 									.c2 {
 										width: 45%;
+										border-bottom: 1px solid #f2f2f2;
 										/*vertical-align: top;*/
 										/*padding-left: */
 									}
@@ -114,28 +143,33 @@
 										}
 
 									.c3 {
+										border-bottom: 1px solid #f2f2f2;
 										width: 10%;
 										text-align: center;
 										/*vertical-align: top;*/
 									}
 
 									.c4 {
+										border-bottom: 1px solid #f2f2f2;
 										width: 15%;
-										/*vertical-align: top;*/
+										text-align: center;
+										vertical-align: middle;
 									}
 
-										.calc-table .calc-product { 
+										.cart-table .calc-product { 
 											margin: 0 auto;
 											display: table;
 										}
 
 									.c5 {
+										border-bottom: 1px solid #f2f2f2;
 										width: 10%;
 										text-align: center;
 										/*vertical-align: top;*/
 									}
 
 									.c6 {
+										border-bottom: 1px solid #f2f2f2;
 										width: 5%;
 										text-align: center;
 										/*vertical-align: top;*/
@@ -154,10 +188,39 @@
 												color: #C1C1D0;
 											}
 
+								.total-sum-tr td {
+									padding: 10px 0 15px;
+								}
+
+						div.order-cart-container {
+							padding:15px 0;
+							text-align: center;
+							height: 35px;
+						}
+
+							button.order-cart-btn {
+								border: none;
+								outline: none;
+								padding: 7px 10px;
+								color: #fff;
+								border-radius: 4px;
+								transition: all 0.3s ease 0s;
+								background-color: #FF7F50;
+							}
+
+							button.order-cart-btn:active {
+								margin-top: 1px;
+							}
+
+							button.order-cart-btn:hover {
+								background-color: #FC7240;
+							}
+
+
 					</style>
 
-					<table class="calc-table">
-						<tr>
+					<table class="cart-table">
+						<tr class="head-tr">
 							<td class="c1 head-td">&nbsp;</td>
 							<td class="c2 head-td">Наименование</td>
 							<td class="c3 head-td">Цена</td>
@@ -166,6 +229,9 @@
 							<td class="c6 head-td"></td>
 						</tr>
 						<tr>
+							<td class="space-tr" colspan="6"></td>
+						</tr>
+						<tr class="cart-product-tr">
 							<td class="c1">
 								<img src="http://lorempixel.com/640/480/food/1" alt="">
 							</td>
@@ -191,17 +257,54 @@
 								<span><i class="fa fa-times" aria-hidden="true"></i></span>
 							</td>
 						</tr>
-						
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
+						<!-- <tr>
+							<td class="line-tr" colspan="6"></td>
+						</tr> -->
+						<!-- <tr>
+							<td class="space-tr" colspan="6"></td>
+						</tr> -->
+						<tr class="cart-product-tr">
+							<td class="c1">
+								<img src="http://lorempixel.com/640/480/food/2" alt="">
+							</td>
+							<td class="c2">
+								<a href="">Давно выяснено, что при оценке дизайна</a>
+							</td>
+							<td class="c3">560</td>
+							<td class="c4">
+								<div class="calc-product clearfix">
+									<span class="calc-minus">
+										<i class="fa fa-minus" aria-hidden="true"></i>
+									</span>
+									<span class="calc-input">
+										<input type="text" value="1" maxlength="3">
+									</span>
+									<span class="calc-plus">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</span>
+								</div>
+							</td>
+							<td class="c5">1120</td>
+							<td class="c6">
+								<span><i class="fa fa-times" aria-hidden="true"></i></span>
+							</td>
 						</tr>
+						<!-- <tr>
+							<td class="line-tr" colspan="6"></td>
+						</tr> -->
+						<tr class="total-sum-tr">
+							<td class="c4" colspan="3"></td>
+							<td class="c4">Итого:</td>
+							<td class="c5">2400</td>
+							<td class="c6">&nbsp;</td>
+						</tr>
+						<!-- <tr>
+							<td class="line-tr" colspan="6"></td>
+						</tr> -->
 					</table>
-
+					<div class="order-cart-container">
+						<button class="order-cart-btn">Оформить зааказ</button>
+					</div>
 				</div> <!-- .cart -->
 			</div> <!-- .content-right -->
 	</div> <!-- .wrapper -->
