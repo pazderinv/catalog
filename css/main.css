@@ -50,7 +50,7 @@ body {
 	}
 	
 	.header-logo-wrap {
-		width:30%;
+		width:25%;
 		float:left;
 	}
 	
@@ -74,8 +74,8 @@ body {
 			}
 			
 	.header-middle-wrap {
-		width:40%;
-		margin:0 30%;
+		width:45%;
+		margin:0 25%;
 	}
 	.header-contacts-wrap {
 		width:30%;
@@ -83,13 +83,13 @@ body {
 	}
 	
 		.header-contacts-content {
-			margin:20px 0 0 20px;
+			margin:20px 0 0 40px;
 		}
 		
 		.header-contacts-content p {
 			/*line-height:20px;*/
 			margin:0;
-			font-size:22px;
+			font-size:20px;
 			color:#5c5c5f;
 		}
 
