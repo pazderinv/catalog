@@ -103,12 +103,13 @@ body {
 	
 		.header-contacts-content {
 			margin:20px 0 0 40px;
+			padding-left: 52px;
 		}
 		
 		.header-contacts-content p {
 			/*line-height:20px;*/
 			margin:0;
-			font-size:20px;
+			font-size:16px;
 			color:#5c5c5f;
 		}
 
@@ -121,7 +122,7 @@ body {
 				padding: 0px 10px 20px;
 				margin-bottom: 15px;
 				border-radius: 4px;*/
-				padding-top: 30px;
+				padding-top: 20px;
 			}
 
 				.search-container form {
@@ -139,10 +140,11 @@ body {
 					}
 
 					.search-container form input {
-						width: 88%;
+						width: 80%;
 						border: 1px solid #DEDEDE;
 						outline: none;
 						padding: 7px 10% 7px 5px;
+						margin-left: 8%;
 						/*background-color: #fcfcfc;
 						box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);*/
 						
@@ -248,7 +250,7 @@ body {
 /* Middle 
 -----------------------------------------------------------------------------*/
 .content {
-	padding: 0px 0px 120px 0;
+	padding: 0px 0px 95px 0;
 }
 
 	.left-sidebar {
@@ -258,7 +260,7 @@ body {
 		/*min-width: 190px;*/
 	}
 
-		.left-sidebar-widget{
+		.left-sidebar-widget {
 			background-color: #fff;
 			border: 1px solid #dedede;
 			padding: 10px 10px 10px 10px;
@@ -334,7 +336,7 @@ body {
 			.product-item {
 				width: 30%;
 				background-color: #fff;
-				border: 1px solid #DEDEDE;
+				border: 1px solid #eee;
 				border-radius: 4px;
 				float: left;
 				margin-left: 3%;
@@ -352,7 +354,7 @@ body {
 					}
 
 					.product-item-title {
-						padding: 3%;
+						padding: 5% ;
 
 					}
 
@@ -366,7 +368,9 @@ body {
 						}
 
 					.product-item-price {
-						padding: 3%;
+						border-top: 1px solid #DEDEDE;
+						padding: 5% 0;
+						margin: 0 5%;
 					}
 
 						.product-item-price span.pi-span-price {
@@ -598,12 +602,20 @@ body {
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-	margin: -100px auto 0;
-	max-width: 1000px;
-	height: 100px;
-	background:#D1D2D4;
-	position: relative;
-	/*box-sizing:border-box;*/
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #e5e5e5 none repeat scroll 0 0;
+    border-color: #fff #fff -moz-use-text-color;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid solid none;
+    border-width: 2px 2px medium;
+    height: 75px;
+    margin: -75px auto 0;
+    max-width: 1000px;
+    position: relative;
 }
 	
 	.footer-copy {
