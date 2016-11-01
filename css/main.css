@@ -25,8 +25,13 @@ html {
 body {
 	font: 14px "RobotoRegular", sans-serif;
 	height: 100%;
-	background-image:url(../images/bg_body.png);
+	/*background-image:url(../images/bg_body.png);*/
 }
+
+a {
+	color:#0054b9;
+}
+
 .wrapper {
 	/*min-width: 1000px;*/
 	max-width: 1000px;
@@ -103,7 +108,7 @@ body {
 	
 		.header-contacts-content {
 			margin:20px 0 0 40px;
-			padding-left: 52px;
+			padding-left: 47px;
 		}
 		
 		.header-contacts-content p {
@@ -113,106 +118,11 @@ body {
 			color:#5c5c5f;
 		}
 
-/* Форма поиска */
-
-			.search-container {
-				/*margin-left: 3%;*/
-				/*background-color: #fff;
-				border: 1px solid #DEDEDE;
-				padding: 0px 10px 20px;
-				margin-bottom: 15px;
-				border-radius: 4px;*/
-				padding-top: 20px;
-			}
-
-				.search-container form {
-					display: table;
-					margin: 0 auto;
-					width: 100%;
-					overflow: hidden;
-					padding: 5px;
-				}
-
-					.search-container form input, 
-					.search-container form button {
-						float:left;
-
-					}
-
-					.search-container form input {
-						width: 80%;
-						border: 1px solid #DEDEDE;
-						outline: none;
-						padding: 7px 10% 7px 5px;
-						margin-left: 8%;
-						/*background-color: #fcfcfc;
-						box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);*/
-						
-					} 
-
-					.search-container form input:focus {
-						box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-					}
-
-					.search-container form button {
-						width: 36px;
-						background-color: #fff;
-						color: #3CB371;
-						border:none;
-						outline: none;
-						padding: 4px 0px;
-						margin-left: -37px;
-						border: none;
-						border-left: 1px solid #DEDEDE;
-						margin-top: 4px;
-					}
-
-					::-webkit-input-placeholder {color:#aaa;}
-					::-moz-placeholder          {color:#aaa;}/* Firefox 19+ */
-					:-moz-placeholder           {color:#aaa;}/* Firefox 18- */
-					:-ms-input-placeholder      {color:#aaa;}
-
-					:focus::-webkit-input-placeholder {color: transparent}
-					:focus::-moz-placeholder          {color: transparent}
-					:focus:-moz-placeholder           {color: transparent}
-					:focus:-ms-input-placeholder      {color: transparent}
-
 /*.top-menu*/	
-
-/*** Корзина ***/
-.top-cart {
-	display: table;
-	float: right;
-}
-
-	.top-cart a {
-		display:block;
-		color:#5c5c5f;
-		text-transform:uppercase;
-		text-decoration:none;
-		border:none;
-		outline:none;
-		padding:10px;
-		font-size:15px;
-		border-radius:4px;
-		margin-right:2px;
-		transition: background 0.3s ease 0s;
-		background-color:#FF8153; color:#FFFFFF;
-	}
-
-	.top-cart a:hover {
-		background-color:#FD6D38;
-	}	
 
 /*** Верхнее меню ***/
 .top-menu {
-	margin:20px 0px 0px 0;
-	padding:10px;
-	border:1px solid #dedede;
-	/*border-left:1px solid #dedede;*/
-	background-color:#F3F3F6;
-	border-radius:4px;
-	background-color:#fff;
+	
 }
 
 	.top-menu ul {
@@ -224,23 +134,12 @@ body {
 		}
 		
 			.top-menu ul li a {
-				display:block;
-				color:#5c5c5f;
-				text-transform:uppercase;
-				text-decoration:none;
-				border:none;
-				outline:none;
-				padding:10px;
-				font-size:15px;
-				border-radius:4px;
-				margin-right:2px;
-				transition: background 0.4s ease 0s;
-				/*transition: color 0.1s ease 0s;*/
+				
 			}
 			
 			.top-menu ul li a.tm-active, 
 			.top-menu ul li a:hover {
-				background-color:#FF8153; color:#FFFFFF;
+				
 			}
 
 /* top-cart (корзина в верхнем меню) */
@@ -260,44 +159,6 @@ body {
 		/*min-width: 190px;*/
 	}
 
-		.left-sidebar-widget {
-			background-color: #fff;
-			border: 1px solid #dedede;
-			padding: 10px 10px 10px 10px;
-			border-radius: 4px;
-		}
-
-			.left-sidebar-widget h3 {
-				font-weight: normal;
-				font-size: 18px;
-				margin:0;
-				padding: 0;
-				margin-bottom: 15px;
-			}
-
-			.left-sidebar-widget ul {
-				margin:0;
-				padding: 0;
-			}
-
-				.left-sidebar-widget ul li{
-					padding-bottom: 10px;
-				}
-					
-					.left-sidebar-widget ul li .fa {
-						font-size: 13px;
-						color: #3CB371;
-					}
-
-					.left-sidebar-widget ul li a {
-						color: #5c5c5f;
-						padding-left: 5px;	
-					}
-
-					.left-sidebar-widget ul li a:hover {
-						text-decoration: none;
-					}
-
 	.right-content {
 		width: 75%; 
 		float: right;
@@ -305,313 +166,24 @@ body {
 		padding: 0px 0 0 0;
 	}
 
-		.breadcrumbs {
-			font-size: 0;
-			/*line-height: 25px;*/
-		}
-
-			.breadcrumbs a {
-				font-size: 15px;
-				line-height: 50px;
-				color: #5c5c5f;
-				text-decoration: none;
-				padding: 0 5px 0 0;
-			}
-
-			.breadcrumbs a:hover {
-				text-decoration: underline;
-			}
-
-				.breadcrumbs a .fa {
-					padding: 0 5px 0 0;
-					/*color: #3CB371;
-					font-size: 15px;*/
-				}
-
-		
-		.product-items-container {
-			margin-top: 50px;
-		}	
-
-			.product-item {
-				width: 30%;
-				background-color: #fff;
-				border: 1px solid #eee;
-				border-radius: 4px;
-				float: left;
-				margin-left: 3%;
-				margin-bottom: 15px;
-			}
-				
-				.product-item-img{
-					width: 100%;
-					padding: 3%;
-				}
-
-					.product-item-img img {
-						display: block;
-						width: 94%;
-					}
-
-					.product-item-title {
-						padding: 5% ;
-
-					}
-
-						.product-item-title a {
-							color: #5c5c5f;	
-							text-decoration: none;						
-						}
-
-						.product-item-title a:hover {
-							color:#7A7A7D;
-						}
-
-					.product-item-price {
-						border-top: 1px solid #DEDEDE;
-						padding: 5% 0;
-						margin: 0 5%;
-					}
-
-						.product-item-price span.pi-span-price {
-							float: left;
-							font-size: 16px;
-						}
-
-						.product-item-price span.pi-span-cart {
-							float: right;
-						}
-
-							.product-item-price span.pi-span-cart .fa {
-								color:#3CB371;
-								cursor: pointer;
-								font-size: 17px;
-							}
-
-							.product-item-price span.pi-span-cart .fa:hover {
-								color:#2AA15F;
-							}
-/*Постраничная навигация*/
-
-.pg-container {
-	margin:20px 0 20px 3%;
-}
-
-	.pagination {
-		display: table;
-		margin: 0 auto;
-	}
-
-		.pagination a {
-			float:left;
-			padding: 7px 12px;
-			margin-right: 10px;
-			border:1px solid #CFCFCF;
-			color:#777;
-			text-decoration: none;
-			border-radius: 50%;
-			transition: background 0.3s ease 0s;
-			transition: border 0.3s ease 0s;
-		} 
-
-			.pagination a.pactive, .pagination a:hover {
-				background-color: #3CB371;
-				border:1px solid #3CB371;
-				color:#fff;
-			}
+	
 
 /*Детальный просмотр товара*/
-
-.detail-product {
-	width: 96%;
-	background-color: #fff;
-	border-radius: 4px;
-	padding: 2%;
-	border:1px solid #DEDEDE;
-	margin-bottom: 50px;
-}
-
-	.product-info-container {
-		margin-bottom: 15px;
-	}
-
-		.detail-product-gallery {
-			width: 40%;
-			float: left;
-		}
-
-			.gallery-main {
-				margin-bottom: 15px;
-			}
-				.gallery-main img {
-					width:100%;
-				}
-
-			.gallery-thumbs {}
-
-				.gallery-thumbs img {
-					width: 30%;
-					float:left;
-					margin: 0 3% 15px 0;
-				}
-
-		.detail-product-info {
-			width: 57%;
-			float: right;
-			margin-left: 3%;
-		}
-			
-			.title-product {
-				font-weight: normal;
-				font-size: 18px;
-				margin:0;
-				padding: 0;
-				margin-bottom: 25px;
-			}
-			
-			.price-product {
-				margin-bottom: 25px;
-			}
-
-				.price-product p {
-					margin: 0;
-					padding: 0;
-					line-height: 18px;
-					font-size: 18px;
-				}
-
-			.calc-product {
-				margin-bottom: 25px;
-			}
-
-				.calc-product span {
-					float: left;
-					border: 1px solid #dedede;
-					width: 24px; height: 24px;
-					cursor: pointer;
-				}
-
-				.calc-plus {
-					text-align: center;
-					line-height: 24px;
-					color: #7F7F7F;
-					border-radius: 0 3px 3px 0;
-					background-color: #fff;
-				}
-
-					.calc-plus:hover {background-color: #F2F2F2;}
-
-				.calc-minus {
-					text-align: center;
-					line-height: 24px;
-					color: #7F7F7F;
-					border-radius: 3px 0 0 3px;
-					background-color: #fff;
-				}
-
-					.calc-minus:hover {background-color: #F2F2F2;}
-
-				.calc-input {
-					width: 36px !important;
-					text-align: center;
-					border-right: none !important;
-					border-left: none !important;
-				}
-
-					.calc-input input {
-						width: 100%;
-						margin: 0; padding: 0;
-						line-height: 24px;
-						border: none;
-						outline: none;
-						text-align: center;
-						font-size: 16px;
-						color: #7F7F7F;
-						font-weight: bold;
-					}
-
-				.calc-sum {
-					width: 70px !important;
-					text-align: left;
-					padding-left: 20px;
-					border: none !important;
-					font-size: 16px;
-					/*font-weight: bold;*/
-					color: #3CB371;
-					line-height: 26px;
-				}
-
-			.action-product {}
-
-				.action-product > div {
-					width: 160px;
-					float: left;
-					margin-right: 10px;
-				}
-
-					.action-product > div > button {
-						border: none;
-						outline: none;
-						padding: 7px 10px;
-						color: #fff;
-						border-radius: 4px;
-						/*transition: background 0.3s ease 0s;*/
-					}
-
-					.add-cart {
-						background-color: #3CB371;
-					}
-
-					.order-now {
-						background-color: #FF7F50;
-					}
-
-					.order-now:active {
-						margin-top: 1px;
-					}
-
-					.add-cart:active {
-						margin-top: 1px;
-					}
-					
-					.add-cart:hover {
-						background-color: #2FAB66;
-						transition: background 0.3s ease 0s;
-					}
-
-					.order-now:hover {
-						background-color: #FC7240;
-						transition: background 0.3s ease 0s;
-					}
-
-	.product-description {}
-	
-		.product-description h3 {
-			font-weight: normal;
-			font-size: 18px;
-			margin:0;
-			padding: 0;
-			margin-bottom: 15px;
-		}
-
-		.product-description-text {
-			padding: 10px;
-			background-color: #F6F6F6;
-		}
 
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
-	-moz-border-bottom-colors: none;
+	/*-moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    background: #e5e5e5 none repeat scroll 0 0;
     border-color: #fff #fff -moz-use-text-color;
     border-image: none;
+     border-style: solid solid none;
+    border-width: 2px 2px medium;*/
+    border-bottom: none;
     border-radius: 4px;
-    border-style: solid solid none;
-    border-width: 2px 2px medium;
+    background: #e5e5e5 none repeat scroll 0 0;
     height: 75px;
     margin: -75px auto 0;
     max-width: 1000px;
